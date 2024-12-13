@@ -2,6 +2,7 @@ import React from "react";
 import { baseUrl } from "../../../lib/helper";
 import AuthorCards from "../../uiComponent/AuthorCards";
 import { authors, featuredLogos } from "../../../data/projectData";
+import { Link } from "react-router-dom";
 
 const AuthorsSection = () => (
   <section className="container mx-auto px-4 py-16">
@@ -10,7 +11,9 @@ const AuthorsSection = () => (
     </h2>
     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
       {authors.map((author,idx) => (
-        <AuthorCards idx={idx} author={author} />
+        <Link key={idx} to={author.link}>
+        <AuthorCards author={author} />
+        </Link>
       ))}
     </div>
     <div className="text-center flex gap-5 justify-between items-start">

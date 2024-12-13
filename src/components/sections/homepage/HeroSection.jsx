@@ -15,12 +15,13 @@ const HeroSection = () => {
       </div>
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-3xl lg:ml-16 flex flex-col gap-y-4">
-          <p className="uppercase font-light tracking-wide text-white ">
+          <p className="uppercase font-light tracking-wide text-white "
+          >
             posted on{" "}
             <strong className="font-bold tracking-wider">startup</strong>
           </p>
           <h1 className="lg:text-5xl text-3xl font-semibold tracking-wide leading-tight text-white mb-4">
-            step-by-step guide to choosing great font pairs
+            Step-by-step guide to choosing great font pairs
           </h1>
           <p className="capitalize text-white">
             By <b className="text-[#FFD050] font-bold">James west</b> | May 23

@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const AuthorCards = ({ author,idx }) => {
   return (
-    <div key={idx} className="bg-gray-50 hover:bg-[#ffd05069] hover:-translate-y-3 duration-300 cursor-pointer p-6 rounded-lg text-center">
+    <div data-aos="zoom-in" key={idx} className="bg-gray-50 hover:bg-[#ffd05069] hover:-translate-y-3 duration-300 cursor-pointer p-6 rounded-lg text-center">
       <div className="mb-4">
         <img
           src={author?.image}

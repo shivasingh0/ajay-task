@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <div className="bg-[#F4F4F4] lg:p-16 p-6 rounded-md before:content-[''] before:h-5 before:w-full before:relative before:flex assetLine">
       <div className="grid md:grid-cols-2 gap-12">
-        <div>
+        <div data-aos="fade-right" data-aos-offset="200">
           <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">
             About us
           </h3>
@@ -23,7 +23,7 @@ const AboutSection = () => {
             Read More &gt;
           </a>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-offset="200">
           <h3 className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">
             Our mission
           </h3>

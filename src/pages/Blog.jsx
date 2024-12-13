@@ -7,7 +7,6 @@ import JoinTeamSection from "../components/sections/homepage/JoinTeamSection";
 const Blog = () => {
   return (
     <>
-      {" "}
       <LandingPage />
       <PostSection />
       <div className="max-w-7xl mx-auto">

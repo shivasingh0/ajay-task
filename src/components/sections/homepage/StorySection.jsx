@@ -14,7 +14,9 @@ const StorySection = () => {
             className="rounded-lg lg:w-[800px] "
           />
         </div>
-        <div className="lg:max-w-xl max-w-full right-0  lg:absolute top-[240px] bg-[whitesmoke] lg:px-5 lg:py-20 h-fit ">
+        <div data-aos="zoom-in-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine" className="lg:max-w-xl max-w-full right-0  lg:absolute top-[240px] bg-[whitesmoke] lg:px-5 lg:py-20 h-fit ">
           <span className="text-gray-600 uppercase tracking-wider text-sm font-semibold">
             How We Started
           </span>

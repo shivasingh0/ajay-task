@@ -36,10 +36,15 @@ const Footer = () => {
                 Contact us
               </Link>
             </li>
+            <li>
+              <Link to="/privacy_policy" className="text-white font-bold text-lg">
+                Privacy Policy
+              </Link>
+            </li>
           </ul>
-          <button className="bg-white text-[#232536] font-bold text-lg px-5 py-2 rounded-md">
+          {/* <button className="bg-white text-[#232536] font-bold text-lg px-5 py-2 rounded-md">
             Subscribe
-          </button>
+          </button> */}
         </div>
       </div>
 

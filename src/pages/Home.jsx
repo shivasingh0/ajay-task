@@ -1,21 +1,6 @@
 import React from "react";
-import {
-  FaBook,
-  FaUsers,
-  FaBolt,
-  FaGraduationCap,
-  FaGreaterThan,
-  FaBriefcase,
-  FaRocket,
-  FaChartLine,
-  FaMicrochip,
-  FaArrowLeft,
-  FaArrowRight,
-} from "react-icons/fa";
-import { baseUrl } from "../lib/helper";
 import AuthorsSection from "../components/sections/homepage/AuthorsSection";
 import StorySection from "../components/sections/homepage/StorySection";
-import CustomButton from "../components/uiComponent/CustomButton";
 import HeroSection from "../components/sections/homepage/HeroSection";
 import FeaturedSection from "../components/sections/homepage/FeaturedSection";
 import AboutSection from "../components/sections/homepage/AboutSection";

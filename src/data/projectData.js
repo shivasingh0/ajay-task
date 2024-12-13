@@ -39,21 +39,25 @@ export const authors = [
     name: "Floyd Miles",
     image: `${baseUrl()}/assets/client-first-images/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313.svg`,
     socials: ["facebook", "twitter", "instagram", "linkedin"],
+    link: "/author"
   },
   {
     name: "Dianne Russell",
     image: `${baseUrl()}/assets/client-first-images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.svg`,
     socials: ["facebook", "twitter", "instagram", "linkedin"],
+    link: "/author"
   },
   {
     name: "Jenny Wilson",
     image: `${baseUrl()}/assets/client-first-images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.svg`,
     socials: ["facebook", "twitter", "instagram", "linkedin"],
+    link: "/author"
   },
   {
     name: "Leslie Alexander",
     image: `${baseUrl()}/assets/client-first-images/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.svg`,
     socials: ["facebook", "twitter", "instagram", "linkedin"],
+    link: "/author"
   },
 ];
 
