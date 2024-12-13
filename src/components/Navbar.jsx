@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { baseUrl } from "../lib/helper";
 import { Link } from "react-router-dom";
+import CustomButton from "./uiComponent/CustomButton";
 
 const Navbar = () => {
+  const [open,setOpen] = useState(false)
   return (
     <>
-      <nav className="bg-[#232536] h-20 flex items-center justify-between px-10">
+      <nav className=" bg-[#232536] fixed top-0 right-0 z-50 w-screen h-20 lg:flex items-center justify-between px-10">
         <div>
           <img
             src={`${baseUrl()}/assets/client-first-images/Logo.svg`}
             alt=""
           />
         </div>
-        <div className="flex items-center gap-10">
-          <ul className="flex gap-10">
+        <div className="flex lg:static absolute items-center gap-10">
+          <ul className="flex lg:static absolute gap-10 ">
             <li>
               <Link to="/" className="text-white font-bold text-lg">
                 Home
@@ -35,9 +37,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <button className="bg-white text-[#232536] font-bold text-lg px-5 py-2 rounded-md">
-            Subscribe
-          </button>
+         <CustomButton className={'bg-white lg:flex hidden'} btnName={"subscribe"} />
         </div>
       </nav>
     </>

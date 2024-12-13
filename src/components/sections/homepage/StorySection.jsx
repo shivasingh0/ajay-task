@@ -1,21 +1,20 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import { baseUrl } from '../lib/helper';
+import { baseUrl } from '../../../lib/helper';
+import CustomButton from '../../uiComponent/CustomButton';
 
 const StorySection = () => {
   return (
-    <section className="container mx-auto px-4 py-16">
-      <div className="grid md:grid-cols-2 gap-8 items-center">
-        <div className="relative h-[400px] w-full">
+    <section className="relative container mx-auto px-4 py-16">
+      <div className=" flex flex-col lg:flex-row">
+        <div className="relative lg:w-[800px] w-full ">
           <img
             src={`${baseUrl()}/assets/client-first-images/close-up-photography-of-man-wearing-sunglasses-1212984.svg`}
             alt="Three friends enjoying a scenic view"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
+            className="rounded-lg lg:w-[800px] "
           />
         </div>
-        <div className="max-w-lg">
+        <div className="lg:max-w-xl max-w-full right-0  lg:absolute top-[240px] bg-[whitesmoke] lg:px-5 lg:py-20 h-fit ">
           <span className="text-gray-600 uppercase tracking-wider text-sm font-semibold">
             How We Started
           </span>
@@ -27,13 +26,7 @@ const StorySection = () => {
             among friends grew into a platform where writers from all walks of life could share their 
             experiences and insights, inspiring readers worldwide.
           </p>
-          <button 
-            className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-6 py-3 rounded-md font-semibold inline-flex items-center gap-2 transition-colors"
-            aria-label="Discover our story"
-          >
-            Discover our story
-            <FaArrowRight aria-hidden="true" />
-          </button>
+          <CustomButton className={"text-xl py-2 "} btnName={" Discover our story"} btnIcon={<FaArrowRight/>}/>
         </div>
       </div>
     </section>
